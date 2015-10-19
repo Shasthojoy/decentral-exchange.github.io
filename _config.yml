@@ -1,0 +1,10 @@
+title: decentral.exchange
+tag_text: decentral.exchange
+description: decentral.exchange offers an entry point into the decentral exchange of BitShares 2.0
+markdown: kramdown
+
+collections :
+ version : 
+  output : yes
+  permalink: /v/:name
+  layout: version
