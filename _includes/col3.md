@@ -1,4 +1,4 @@
-## Using P2P Content Delivery with IPFS
+## P2P Content Delivery with IPFS
 
 If you would like to use IPFS as content delivery, you should install
 [IPFS](https://ipfs.io/) via [Go](http://golang.org):
