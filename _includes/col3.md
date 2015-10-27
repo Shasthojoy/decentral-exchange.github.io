@@ -21,3 +21,30 @@ If you want to support the P2P content delivery network, please consider
 {% for v in versions limit:1%}
     ipfs pin add -r {{v.hash}}
 {% endfor %}
+
+## All Revisions
+
+
+### BitShares 2.0
+{% assign versions = (site.version | sort: 'build' | reverse) %}
+<ul><small>
+ {% for v in versions %}
+  <li><tt>{{ v.date }}</tt>
+   - <a href="http://ipfs.io/ipfs/{{ v.hash }}">IPFS</a> 
+   / <a href="https://github.com/decentral-exchange/wallet/archive/{{ v.commit }}.zip"><i class="fa fa-file-archive-o"></i></a>
+   / <a href="https://github.com/decentral-exchange/wallet/tree/{{ v.commit }}"><i class="fa fa-github-alt"></i></a>
+  </li>
+ {% endfor %}
+</small></ul>
+
+### MUSE
+{% assign versions = (site.muse-version | sort: 'build' | reverse) %}
+<ul><small>
+{% for v in versions %}
+ <li><tt>{{ v.date }}</tt>
+  - <a href="http://ipfs.io/ipfs/{{ v.hash }}">IPFS</a> 
+  / <a href="https://github.com/decentral-exchange/wallet/archive/{{ v.commit }}.zip"><i class="fa fa-file-archive-o"></i></a>
+  / <a href="https://github.com/decentral-exchange/wallet/tree/{{ v.commit }}"><i class="fa fa-github-alt"></i></a>
+ </li>
+{% endfor %}
+</small></ul>
