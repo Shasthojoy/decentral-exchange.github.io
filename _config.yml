@@ -8,3 +8,8 @@ collections :
   output : yes
   permalink: /v/:name
   layout: version
+
+ muse-version : 
+  output : yes
+  permalink: /m/:name
+  layout: version
